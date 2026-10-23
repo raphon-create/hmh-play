@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko><meta charset=utf-8><meta name="robots" content="noindex,nofollow,noarchive"><meta name="hmh-build" content="20261023172155"><style>.ro-banner{background:#ff8a3d;color:#111;font-weight:800;text-align:center;padding:7px 10px;font-size:15px}.ro-banner a{color:#111;margin-left:10px}.navlink{display:inline-flex;align-items:center;margin-left:8px;padding:8px 14px;border-radius:10px;background:#1b8f86;color:#fff;font-weight:800;text-decoration:none;white-space:nowrap}.comp,#drawer .ft,#chFix,.fix .btn.pri,[data-q] textarea,[data-q] .btn.pri,.q.done details,.sl textarea,button[onclick^="scSave"],button[onclick^="ulSave"],button[onclick^="rate("],#fbSaveB,#fbCm,label.btn:has(input[type=file]),#nctl,#dropall{display:none!important}[data-q] .btn.opt{pointer-events:none}</style><meta name=viewport content="width=device-width,initial-scale=1"><title>HMH공간</title><link rel=icon href="data:,">
+<!doctype html><html lang=ko><meta charset=utf-8><meta name="robots" content="noindex,nofollow,noarchive"><meta name="hmh-build" content="20261023173220"><style>.ro-banner{background:#ff8a3d;color:#111;font-weight:800;text-align:center;padding:7px 10px;font-size:15px}.ro-banner a{color:#111;margin-left:10px}.navlink{display:inline-flex;align-items:center;margin-left:8px;padding:8px 14px;border-radius:10px;background:#1b8f86;color:#fff;font-weight:800;text-decoration:none;white-space:nowrap}.comp,#drawer .ft,#chFix,.fix .btn.pri,[data-q] textarea,[data-q] .btn.pri,.q.done details,.sl textarea,button[onclick^="scSave"],button[onclick^="ulSave"],button[onclick^="rate("],#fbSaveB,#fbCm,label.btn:has(input[type=file]),#nctl,#dropall{display:none!important}[data-q] .btn.opt{pointer-events:none}</style><meta name=viewport content="width=device-width,initial-scale=1"><title>HMH공간</title><link rel=icon href="data:,">
 <style>
 :root{--bg:#08121c;--bg2:#0d1b2a;--card:#11223a;--card2:#152a45;--line:#1f4258;--teal:#2ec4b6;--teal2:#1b8f86;--warm:#ff8a3d;--warm2:#ffb27a;--tx:#e2edf3;--dim:#8ea6b6;--good:#38d39f;--bad:#ff6b6b;--pick:#ffcc4d}
 *{box-sizing:border-box}html{scroll-behavior:auto}
@@ -91,7 +91,7 @@ textarea:focus,input:focus{outline:none;border-color:var(--teal)}
 .qimg{height:200px;image-rendering:pixelated;display:block;margin-bottom:6px}
 .ann{border-color:var(--warm);background:linear-gradient(90deg,#ff8a3d1c,var(--card));margin-bottom:12px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}.ann div{flex:1}
 </style>
-<div class=ro-banner>👀 읽기 전용 공유본 · 마지막 업데이트 2026-10-23 17:21 KST<a href="chat/">💬 개발 대화 기록 보기 →</a></div><header><div class=top><div class=logo>🍲 HMH공간<small>네가 보고, 고르고, 남기는 곳</small></div><span id=nctl class=row style="gap:8px;margin-left:auto"></span><span class=upd id=upd style="margin-left:14px"></span></div><nav id=nav></nav></header>
+<div class=ro-banner>👀 읽기 전용 공유본 · 마지막 업데이트 2026-10-23 17:32 KST<a href="chat/">💬 개발 대화 기록 보기 →</a></div><header><div class=top><div class=logo>🍲 HMH공간<small>네가 보고, 고르고, 남기는 곳</small></div><span id=nctl class=row style="gap:8px;margin-left:auto"></span><span class=upd id=upd style="margin-left:14px"></span></div><nav id=nav></nav></header>
 <main id=main></main>
 <aside id=drawer><div class=hd><h3 id=dt></h3><button class="btn sm" onclick="closeDrawer()">닫기 ✕</button></div><div class=bd id=db></div>
 <div class=ft><textarea id=dtx rows=3 placeholder="여기에 코멘트 적어줘 (Ctrl+Enter로 보내기)"></textarea><div class=row style="margin-top:10px;justify-content:space-between"><span class=small id=dreply></span><button class="btn pri" onclick="sendDrawer()">코멘트 남기기</button></div></div></aside>
@@ -180,7 +180,7 @@ async function sendQ(b){const w=b.closest('[data-q]'),s=w.querySelector('.btn.op
 let chFilter=localStorage.getItem('chFilter')||'전체',chId=localStorage.getItem('chId')||'';
 function chList(){return D.characters.filter(c=>chFilter=='전체'||c.group==chFilter||c.faction==chFilter)}
 function bestPic(c){const mine=D.images.filter(i=>i.owner==c.name&&!i.discard&&imgRate(i.id)!='별로');
- return mine.find(i=>i.status=='확정')||mine.filter(i=>imgRate(i.id)=='골랐어').pop()||mine.filter(i=>i.group=='current').pop()||mine.filter(i=>i.group=='old').pop()||null}
+ return mine.find(i=>i.status=='확정')||mine.filter(i=>imgRate(i.id)=='골랐어').pop()||mine.filter(i=>i.group=='current').pop()||mine.filter(i=>i.group=='portrait').pop()||mine.filter(i=>i.group=='old').pop()||null}
 function chGo(d){const L=chList();if(!L.length)return;let i=L.findIndex(c=>c.id==chId);i=(i<0?0:i+d+L.length)%L.length;chId=L[i].id;localStorage.setItem('chId',chId);render()}
 function chPick(id){chId=id;localStorage.setItem('chId',id);render()}
 function chSetFilter(f){chFilter=f;localStorage.setItem('chFilter',f);const L=chList();if(L.length&&!L.find(c=>c.id==chId))chId=L[0].id;render()}
@@ -197,6 +197,7 @@ function vChars(){const groups=['전체',...new Set(D.characters.map(c=>c.group)
   <div class=chbody><div class=chpic>${bp?`<div class=pic onclick="zoom(${jq(bp.url)})"><img src="${esc(bp.url)}"></div><div class=small>${esc(bp.label.trim())}${bp.status?` · <span class="tag g">✔ ${esc(bp.status)}</span>`:''}</div>`:'<div class="pic none">시안 없음</div>'}</div>
   <div class=chinfo><div class=nm><span class=sw></span><h3>${esc(disp(c.name))}</h3>${roleTag(c.name)}</div>
    ${c.status?`<div class=st>🎨 ${esc(c.status)}</div>`:''}
+   ${row('최신 설정',c.latest?`<b>${esc(c.latest)}</b>`:'')}
    ${row('소속',esc(c.faction)+(c.district?` · <span class=tag>📍 ${esc(c.district)}</span>`:''))}
    ${row('누구',esc(c.who))}${row('외모',esc(c.look.replace(/^실루엣·색·소품:\s*/,'')))}${row('성격',esc(c.personality))}
    ${row('힘',c.power?`<b>${esc(c.power)}</b>`:'')}${row('대표색',c.sig?`<span class=sw style="display:inline-block;vertical-align:middle"></span> ${esc(c.sig)}`:'')}
