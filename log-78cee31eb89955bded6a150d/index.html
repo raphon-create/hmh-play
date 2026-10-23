@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko><meta charset=utf-8><meta name="robots" content="noindex,nofollow,noarchive"><meta name="hmh-build" content="20261023184025"><style>.ro-banner{background:#ff8a3d;color:#111;font-weight:800;text-align:center;padding:7px 10px;font-size:15px}.ro-banner a{color:#111;margin-left:10px}.navlink{display:inline-flex;align-items:center;margin-left:8px;padding:8px 14px;border-radius:10px;background:#1b8f86;color:#fff;font-weight:800;text-decoration:none;white-space:nowrap}.comp,#drawer .ft,#chFix,.fix .btn.pri,[data-q] textarea,[data-q] .btn.pri,.q.done details,.sl textarea,button[onclick^="scSave"],button[onclick^="ulSave"],button[onclick^="rate("],#fbSaveB,#fbCm,label.btn:has(input[type=file]),#nctl,#dropall{display:none!important}[data-q] .btn.opt{pointer-events:none}</style><meta name=viewport content="width=device-width,initial-scale=1"><title>HMH공간</title><link rel=icon href="data:,">
+<!doctype html><html lang=ko><meta charset=utf-8><meta name="robots" content="noindex,nofollow,noarchive"><meta name="hmh-build" content="20261023191312"><style>.ro-banner{background:#ff8a3d;color:#111;font-weight:800;text-align:center;padding:7px 10px;font-size:15px}.ro-banner a{color:#111;margin-left:10px}.navlink{display:inline-flex;align-items:center;margin-left:8px;padding:8px 14px;border-radius:10px;background:#1b8f86;color:#fff;font-weight:800;text-decoration:none;white-space:nowrap}.comp,#drawer .ft,#chFix,.fix .btn.pri,[data-q] textarea,[data-q] .btn.pri,.q.done details,.sl textarea,button[onclick^="scSave"],button[onclick^="ulSave"],button[onclick^="rate("],#fbSaveB,#fbCm,label.btn:has(input[type=file]),#nctl,#dropall{display:none!important}[data-q] .btn.opt{pointer-events:none}</style><meta name=viewport content="width=device-width,initial-scale=1"><title>HMH공간</title><link rel=icon href="data:,">
 <style>
 :root{--bg:#08121c;--bg2:#0d1b2a;--card:#11223a;--card2:#152a45;--line:#1f4258;--teal:#2ec4b6;--teal2:#1b8f86;--warm:#ff8a3d;--warm2:#ffb27a;--tx:#e2edf3;--dim:#8ea6b6;--good:#38d39f;--bad:#ff6b6b;--pick:#ffcc4d}
 *{box-sizing:border-box}html{scroll-behavior:auto}
@@ -91,7 +91,7 @@ textarea:focus,input:focus{outline:none;border-color:var(--teal)}
 .qimg{height:200px;image-rendering:pixelated;display:block;margin-bottom:6px}
 .ann{border-color:var(--warm);background:linear-gradient(90deg,#ff8a3d1c,var(--card));margin-bottom:12px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}.ann div{flex:1}
 </style>
-<div class=ro-banner>👀 읽기 전용 공유본 · 마지막 업데이트 2026-10-23 18:40 KST<a href="chat/">💬 개발 대화 기록 보기 →</a></div><header><div class=top><div class=logo>🍲 HMH공간<small>네가 보고, 고르고, 남기는 곳</small></div><span id=nctl class=row style="gap:8px;margin-left:auto"></span><span class=upd id=upd style="margin-left:14px"></span></div><nav id=nav></nav></header>
+<div class=ro-banner>👀 읽기 전용 공유본 · 마지막 업데이트 2026-10-23 19:13 KST<a href="chat/">💬 개발 대화 기록 보기 →</a></div><header><div class=top><div class=logo>🍲 HMH공간<small>네가 보고, 고르고, 남기는 곳</small></div><span id=nctl class=row style="gap:8px;margin-left:auto"></span><span class=upd id=upd style="margin-left:14px"></span></div><nav id=nav></nav></header>
 <main id=main></main>
 <aside id=drawer><div class=hd><h3 id=dt></h3><button class="btn sm" onclick="closeDrawer()">닫기 ✕</button></div><div class=bd id=db></div>
 <div class=ft><textarea id=dtx rows=3 placeholder="여기에 코멘트 적어줘 (Ctrl+Enter로 보내기)"></textarea><div class=row style="margin-top:10px;justify-content:space-between"><span class=small id=dreply></span><button class="btn pri" onclick="sendDrawer()">코멘트 남기기</button></div></div></aside>
@@ -99,7 +99,7 @@ textarea:focus,input:focus{outline:none;border-color:var(--teal)}
 <input type=file id=fileIn multiple hidden>
 <script>
 'use strict';
-const TABS=[['home','홈'],['idea','망상'],['ask','결정 대기'],['story','이야기 질문'],['chars','캐릭터'],['gallery','그림 시안'],['progress','진행 상황'],['script','대사집'],['unlock','해금 순서'],['feedback','그림 피드백'],['files','자료실'],['batch','PixelLab 계획'],['botchat','봇 대화']];
+const TABS=[['home','홈'],['idea','망상'],['ask','결정 대기'],['botchat','봇 대화'],['gallery','그림 시안'],['story','이야기 질문'],['feedback','그림 피드백'],['progress','진행 상황'],['script','대사집'],['chars','캐릭터'],['unlock','해금 순서'],['files','자료실'],['batch','PixelLab 계획']];
 const DISP={'제3집정관':'그레이브'};
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let D,A=[],cur=localStorage.getItem('tab')||'home',drawerTarget=null,replyTo=null,uploadTab=null;
@@ -370,8 +370,8 @@ let lastDT='';
 async function poll(){try{const r=await fetch('data.json',{cache:'no-cache'});if(!r.ok)return;const tx=await r.text();const ch=tx!==lastDT;
  if(ch){D=JSON.parse(tx);lastDT=tx;$('#upd').textContent='내용 업데이트 '+D.updated;const typing=(document.activeElement&&document.activeElement.matches('textarea,input,select'))||[...document.querySelectorAll('#main textarea')].some(t=>t.value.trim())||(cur=='feedback'&&FB.strokes.length>0);if(typing)badges();else if(!drawerTarget)render();else badges()}
  nCheck();setTitle()}catch(e){}}
-// ---- 봇 대화 (구현·잡다한거·이야기 + 사용자). 봇 글=data.json botchat, 사용자 글=answers kind:'botchat'(question_id=받는 봇, answer=주제, comment=본문)
-const BCROLE={'구현':'구현 · 코딩','잡다한거':'잡다한거 · 그림','이야기':'이야기 · 이야기','사용자':'사용자'},BCCOL={'구현':'#2ec4b6','잡다한거':'#ffb27a','이야기':'#b48cff','사용자':'#ffcc4d'};
+// ---- 봇 대화 (구현·그림·이야기·디자인 + 사용자). 봇 글=data.json botchat, 사용자 글=answers kind:'botchat'(question_id=받는 봇, answer=주제, comment=본문)
+const BCROLE={'구현':'구현 · 코딩','그림':'그림 · 아트','잡다한거':'그림 · 아트','이야기':'이야기 · 세계관·대사','디자인':'디자인 · 규칙·수치','사용자':'사용자'},BCCOL={'구현':'#2ec4b6','그림':'#ffb27a','잡다한거':'#ffb27a','이야기':'#b48cff','디자인':'#7ad1ff','사용자':'#ffcc4d'};
 let BCF='',BCW='';
 function bcAll(){const b=(D.botchat||[]).map(m=>Object.assign({},m)),u=A.filter(a=>a.kind=='botchat').map(a=>({id:a.id,ts:a.timestamp,from:'사용자',to:a.question_id||'',topic:a.answer||'',text:a.comment||''}));return [...b,...u].sort((x,y)=>String(x.ts)<String(y.ts)?-1:1)}
 function kst(ts){const d=new Date(ts);if(isNaN(d))return esc(ts);return d.toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false})+' (한국)'}
@@ -381,11 +381,11 @@ function vBotchat(){const all=bcAll(),topics=[...new Set(all.map(m=>m.topic).fil
  const msg=m=>{const c=BCCOL[m.from]||'#8ea6b6',me=m.from=='사용자';return `<div class=card style="border-left:6px solid ${c};margin:10px 0;${me?'margin-left:60px;background:#1d2a20':'margin-right:60px'}">
   <div class=row style="gap:8px"><b style="color:${c};font-size:18px">${esc(m.from)}</b><span class=role>${esc(BCROLE[m.from]||'')}</span>${m.to?`<span class=small>→ ${esc(m.to)}</span>`:''}${m.topic?`<span class=tag>${esc(m.topic)}</span>`:''}<span class=small style="margin-left:auto">${kst(m.ts)}</span></div>
   <div style="white-space:pre-wrap;margin-top:6px">${esc(m.text)}</div>${(m.refs&&m.refs.length)?`<div class=small style="margin-top:6px">참고: ${m.refs.map(esc).join(', ')}</div>`:''}</div>`};
- return `<h2>봇 대화</h2><p class=lead>구현(코딩·게임 적용·테스트), 잡다한거(그림), 이야기(세계관·대사·캐릭터)가 대시보드를 근거로 서로 묻고 피드백하는 곳이야. 너도 아래에서 글 남길 수 있어.</p>
+ return `<h2>봇 대화</h2><p class=lead>구현(코딩·게임 적용·테스트), 그림(아트), 이야기(세계관·대사·캐릭터), 디자인(게임 규칙·수치·밸런스)이 대시보드를 근거로 서로 묻고 피드백하는 곳이야. 너도 아래에서 글 남길 수 있어.</p>
  <div class=row style="margin-bottom:6px"><span class=small>주제</span>${chip('','전체',!BCF,'BCF')}${topics.map(t=>chip(t,t,BCF==t,'BCF')).join('')}</div>
- <div class=row style="margin-bottom:10px"><span class=small>누구</span>${chip('','전체',!BCW,'BCW')}${['구현','잡다한거','이야기','사용자'].map(t=>chip(t,BCROLE[t],BCW==t,'BCW')).join('')}</div>
+ <div class=row style="margin-bottom:10px"><span class=small>누구</span>${chip('','전체',!BCW,'BCW')}${['구현','그림','이야기','디자인','사용자'].map(t=>chip(t,BCROLE[t],BCW==t,'BCW')).join('')}</div>
  ${list.length?list.map(msg).join(''):'<p class=dim>아직 글이 없어.</p>'}
- <div class=box><h3>글 남기기</h3><div class=row style="margin-bottom:8px"><span class=small>받는 쪽</span><select id=bcTo style="font:inherit;padding:8px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line)"><option value="모두">모두</option><option value="구현">구현 · 코딩</option><option value="잡다한거">잡다한거 · 그림</option><option value="이야기">이야기 · 이야기</option></select>
+ <div class=box><h3>글 남기기</h3><div class=row style="margin-bottom:8px"><span class=small>받는 쪽</span><select id=bcTo style="font:inherit;padding:8px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line)"><option value="모두">모두</option><option value="구현">구현 · 코딩</option><option value="그림">그림 · 아트</option><option value="이야기">이야기 · 세계관·대사</option><option value="디자인">디자인 · 규칙·수치</option></select>
  <span class=small>주제</span><select id=bcTp style="font:inherit;padding:8px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line)"><option>게임</option><option>그림</option><option>이야기</option><option>기타</option></select></div>
  <textarea id=bcTx rows=3 placeholder="봇들한테 할 말"></textarea><div class=row style="margin-top:8px"><button class="btn pri" onclick="bcSend()">보내기</button><span class=small>봇들은 5분마다 확인해.</span></div></div>`}
 async function bcSend(){const t=$('#bcTx'),tx=t.value.trim();if(!tx){toast('내용을 적어 줘');return}
