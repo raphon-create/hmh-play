@@ -1,4 +1,4 @@
-<!doctype html><html lang=ko><meta charset=utf-8><meta name="robots" content="noindex,nofollow,noarchive"><meta name="hmh-build" content="20261024231637"><style>.ro-banner{background:#ff8a3d;color:#111;font-weight:800;text-align:center;padding:7px 10px;font-size:15px}.ro-banner a{color:#111;margin-left:10px}.navlink{display:inline-flex;align-items:center;margin-left:8px;padding:8px 14px;border-radius:10px;background:#1b8f86;color:#fff;font-weight:800;text-decoration:none;white-space:nowrap}.comp,#drawer .ft,#chFix,.fix .btn.pri,[data-q] textarea,[data-q] .btn.pri,.q.done details,.sl textarea,button[onclick^="scSave"],button[onclick^="ulSave"],button[onclick^="rate("],#fbSaveB,#fbCm,label.btn:has(input[type=file]),#nctl,#dropall{display:none!important}[data-q] .btn.opt{pointer-events:none}</style><meta name=viewport content="width=device-width,initial-scale=1"><title>HMH공간</title><link rel=icon href="data:,">
+<!doctype html><html lang=ko><meta charset=utf-8><meta name="robots" content="noindex,nofollow,noarchive"><meta name="hmh-build" content="20261025091152"><style>.ro-banner{background:#ff8a3d;color:#111;font-weight:800;text-align:center;padding:7px 10px;font-size:15px}.ro-banner a{color:#111;margin-left:10px}.navlink{display:inline-flex;align-items:center;margin-left:8px;padding:8px 14px;border-radius:10px;background:#1b8f86;color:#fff;font-weight:800;text-decoration:none;white-space:nowrap}.comp,#drawer .ft,#chFix,.fix .btn.pri,[data-q] textarea,[data-q] .btn.pri,.q.done details,.sl textarea,button[onclick^="scSave"],button[onclick^="ulSave"],button[onclick^="rate("],#fbSaveB,#fbCm,label.btn:has(input[type=file]),#nctl,#dropall{display:none!important}[data-q] .btn.opt{pointer-events:none}</style><meta name=viewport content="width=device-width,initial-scale=1"><title>HMH공간</title><link rel=icon href="data:,">
 <style>
 :root{--bg:#08121c;--bg2:#0d1b2a;--card:#11223a;--card2:#152a45;--line:#1f4258;--teal:#2ec4b6;--teal2:#1b8f86;--warm:#ff8a3d;--warm2:#ffb27a;--tx:#e2edf3;--dim:#8ea6b6;--good:#38d39f;--bad:#ff6b6b;--pick:#ffcc4d}
 *{box-sizing:border-box}html{scroll-behavior:auto}
@@ -72,6 +72,20 @@ textarea:focus,input:focus{outline:none;border-color:var(--teal)}
 .act{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid #ffffff0a;font-size:15px}.act .when{color:var(--dim);white-space:nowrap;min-width:110px}
 .newimgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:14px}.newimgs .imgc .pic{height:200px}.newimgs .imgc .pic img{height:180px}
 @media (max-width:1100px){.g3,.g2{grid-template-columns:1fr}}
+/* 웹소설 리더 */
+.nvwrap{max-width:820px;margin:0 auto}.nvtoc .ep{display:flex;gap:12px;align-items:baseline;padding:12px 14px;border-radius:12px;cursor:pointer;border:1px solid transparent}
+.nvtoc .ep:hover{background:#ffffff08;border-color:var(--line)}.nvtoc .no{min-width:44px;color:var(--teal);font-weight:800}.nvtoc .tt{font-weight:700}.nvtoc .ln{color:var(--dim);font-size:15px;margin-top:2px}
+.nvtoc .ep.rd .tt{color:var(--dim)}.nvtoc .ep.rd .no::after{content:' ✓';color:var(--good);font-size:13px}
+.nvd{display:inline-block;background:#ffcc4d22;color:var(--pick);border:1px solid #ffcc4d66;border-radius:99px;padding:0 9px;font-size:13px;font-weight:800;margin-left:6px;white-space:nowrap;vertical-align:middle}
+.nvbar{position:sticky;top:var(--hdrh,118px);z-index:5;background:#08121cee;backdrop-filter:blur(6px);padding:10px 0;border-bottom:1px solid var(--line);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.nvbar select{font:inherit;font-size:15px;padding:7px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line);max-width:min(360px,100%);flex:1}
+.nvtext{font-family:"Noto Serif KR","Nanum Myeongjo","Batang","AppleMyungjo",serif;font-size:var(--nvfs,19px);line-height:1.95;letter-spacing:-.003em;color:#e6eef3;word-break:keep-all;overflow-wrap:anywhere}
+.nvtext p{margin:0 0 1.05em}.nvtext .sep{text-align:center;color:var(--dim);margin:1.6em 0;letter-spacing:.6em}
+.nvtext blockquote{margin:0 0 1.2em;padding:8px 14px;border-left:3px solid var(--teal2);color:var(--dim);font-family:"Pretendard","Malgun Gothic",sans-serif;font-size:.86em;line-height:1.7}
+.nvtext .sys{font-family:Consolas,"D2Coding",monospace;font-size:.84em;color:#7fe3d8;background:#0a2026;border:1px solid #1b4d52;border-radius:8px;padding:6px 10px;margin:0 0 1.05em}
+.nvhead h2{font-size:28px;margin:22px 0 4px}.nvnav{display:flex;gap:10px;justify-content:space-between;margin:34px 0 10px;flex-wrap:wrap}.nvnav .btn{flex:1;min-width:140px}
+@media (max-width:700px){main{padding-left:14px;padding-right:14px}.nvhead h2{font-size:23px}.nvtext{line-height:1.85}.nvtoc .ep{padding:10px 6px}.nvtoc .no{min-width:34px}}
+
 .comp{background:var(--card)}.stage{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.chip{background:var(--card2);border:1px solid var(--teal2);border-radius:99px;padding:4px 12px;font-size:14px}.chip a{color:var(--bad);text-decoration:none;margin-left:4px}
 .comp textarea{margin-top:10px}select{background:#060d15;color:var(--tx);border:1.5px solid var(--line);border-radius:10px;padding:9px;font:inherit;max-width:220px}
 .note{background:#2b1909;border-left:3px solid var(--warm);padding:6px 9px;border-radius:6px;font-size:14px;white-space:pre-wrap;word-break:break-word}
@@ -91,7 +105,7 @@ textarea:focus,input:focus{outline:none;border-color:var(--teal)}
 .qimg{height:200px;image-rendering:pixelated;display:block;margin-bottom:6px}
 .ann{border-color:var(--warm);background:linear-gradient(90deg,#ff8a3d1c,var(--card));margin-bottom:12px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}.ann div{flex:1}
 </style>
-<div class=ro-banner>👀 읽기 전용 공유본 · 마지막 업데이트 2026-10-24 23:16 KST<a href="chat/">💬 개발 대화 기록 보기 →</a></div><header><div class=top><div class=logo>🍲 HMH공간<small>네가 보고, 고르고, 남기는 곳</small></div><span id=nctl class=row style="gap:8px;margin-left:auto"></span><span class=upd id=upd style="margin-left:14px"></span></div><nav id=nav></nav></header>
+<div class=ro-banner>👀 읽기 전용 공유본 · 마지막 업데이트 2026-10-25 09:11 KST<a href="chat/">💬 개발 대화 기록 보기 →</a></div><header><div class=top><div class=logo>🍲 HMH공간<small>네가 보고, 고르고, 남기는 곳</small></div><span id=nctl class=row style="gap:8px;margin-left:auto"></span><span class=upd id=upd style="margin-left:14px"></span></div><nav id=nav></nav></header>
 <main id=main></main>
 <aside id=drawer><div class=hd><h3 id=dt></h3><button class="btn sm" onclick="closeDrawer()">닫기 ✕</button></div><div class=bd id=db></div>
 <div class=ft><textarea id=dtx rows=3 placeholder="여기에 코멘트 적어줘 (Ctrl+Enter로 보내기)"></textarea><div class=row style="margin-top:10px;justify-content:space-between"><span class=small id=dreply></span><button class="btn pri" onclick="sendDrawer()">코멘트 남기기</button></div></div></aside>
@@ -99,7 +113,7 @@ textarea:focus,input:focus{outline:none;border-color:var(--teal)}
 <input type=file id=fileIn multiple hidden>
 <script>
 'use strict';
-const TABS=[['home','홈'],['idea','망상'],['ask','결정 대기'],['botchat','봇 대화'],['gallery','그림 시안'],['story','이야기 질문'],['feedback','그림 피드백'],['chars','캐릭터'],['files','자료실'],['batch','PixelLab 계획']];
+const TABS=[['home','홈'],['idea','망상'],['ask','결정 대기'],['decided','정한 것'],['botchat','봇 대화'],['novel','웹소설'],['gallery','그림 시안'],['story','이야기 질문'],['feedback','그림 피드백'],['chars','캐릭터'],['files','자료실'],['batch','PixelLab 계획']];
 const DISP={'제3집정관':'그레이브'};
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let D,A=[],cur=localStorage.getItem('tab')||'home',drawerTarget=null,replyTo=null,uploadTab=null;
@@ -138,8 +152,8 @@ function navInit(){$('#nav').innerHTML=TABS.map(([k,l],i)=>`<button data-t="${k}
 function go(t){if(!TABS.find(x=>x[0]==t))t='home';GAL_KEEP.clear();cur=t;localStorage.setItem('tab',t);document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.t==t));render();window.scrollTo(0,0)}
 document.addEventListener('keydown',e=>{if(e.key=='Escape'){closeDrawer();$('#zoom').style.display='none';return}if(e.target.matches('textarea,input,select'))return;
  if(e.ctrlKey||e.altKey||e.metaKey)return;const n=+e.key;if(n>=1&&n<=Math.min(9,TABS.length))go(TABS[n-1][0])});
-function render(){badges();const f={home:vHome,idea:vIdea,ask:vAsk,story:vStory,chars:vChars,gallery:vGallery,progress:vProgress,files:vFiles,batch:vBatch,script:vScript,unlock:vUnlock,feedback:vFeedback,botchat:vBotchat}[cur];
- $('#main').innerHTML=`<section class="tab on">${f()}${cur=='files'||cur=='idea'||cur=='script'||cur=='unlock'||cur=='feedback'||cur=='botchat'?'':box(cur)}</section>`;bindDrops();if(cur=='feedback')fbMount()}
+function render(){badges();const f={home:vHome,idea:vIdea,ask:vAsk,story:vStory,chars:vChars,gallery:vGallery,progress:vProgress,files:vFiles,batch:vBatch,script:vScript,unlock:vUnlock,feedback:vFeedback,botchat:vBotchat,novel:vNovel,decided:vDecided}[cur];
+ $('#main').innerHTML=`<section class="tab on">${f()}${cur=='files'||cur=='idea'||cur=='script'||cur=='unlock'||cur=='feedback'||cur=='botchat'||cur=='novel'||cur=='decided'?'':box(cur)}</section>`;bindDrops();if(cur=='feedback')fbMount()}
 // ---- 공통 조각
 const cbtn=(t,title,tab)=>{const n=cntAll(t),u=unreadIn(t);return `<button class=cbtn onclick="openThread(${jq(t)},${jq(title)},${jq(tab||cur)})">💬 ${n?`코멘트 <b>${n}</b>`:'코멘트'}${u?` <span class="tag w">새 답장 ${u}</span>`:''}</button>`};
 function pic(url,h){return `<div class=pic onclick="zoom(${jq(url)})"><img src="${esc(url)}" loading=lazy decoding=async></div>`}
@@ -153,13 +167,13 @@ function zoom(u){$('#zoom img').src=u;$('#zoom').style.display='grid'}
 // ---- 홈
 function vHome(){const pq=pendingQ(),ui=unratedImgs(),ups=uploads(),cms=A.filter(a=>a.kind=='comment');
  const recent=A.slice(-8).reverse();
- return `<h2>안녕 👋 지금 볼 것만 모았어</h2>${(D.announcements||[]).slice(-3).reverse().map(a=>`<div class="card ann"><b>📢 게임2</b> <span class=small>${when(a.ts)}</span><div>${esc(a.text)}</div>${a.tab?`<button class="btn sm" onclick="go(${jq(a.tab)})">보러 가기 →</button>`:''}</div>`).join('')}<p class=lead>3초만 보고 빨간 숫자 있는 데만 누르면 돼.</p>
+ return `<h2>안녕 👋 지금 볼 것만 모았어</h2>${(D.announcements||[]).slice(-3).reverse().map(a=>`<div class="card ann"><b>📢 HMH공간</b> <span class=small>${when(a.ts)}</span><div>${esc(a.text)}</div>${a.tab?`<button class="btn sm" onclick="go(${jq(a.tab)})">보러 가기 →</button>`:''}</div>`).join('')}<p class=lead>3초만 보고 빨간 숫자 있는 데만 누르면 돼.</p>${homeDecLine()}
  <div class="grid g3">
   <div class="card stat ${pq.length?'hot':'ok'}" onclick="go(pq.length&&pq.every(isStory)?'story':'ask')"><span class=n>${pq.length}</span><span class=l>정해줄 것</span><span class=s>${pq.length?'네 대답 기다리는 질문이야 →':'지금은 기다리는 질문 없어 ✓'}</span></div>
   <div class="card stat ${ui.length?'hot':'ok'}" onclick="go('gallery')"><span class=n>${ui.length}</span><span class=l>골라줄 그림</span><span class=s>${ui.length?'새로 뽑은 그림, 좋아/별로만 눌러줘 →':'새 그림 다 봤어 ✓'}</span></div>
   <div class="card stat" onclick="go('files')"><span class=n style="color:var(--teal)">${ups.length}<span style="font-size:24px;color:var(--dim)"> / ${cms.length}</span></span><span class=l>올린 자료 / 코멘트</span><span class=s>아무 탭에나 파일 끌어다 놓으면 돼 →</span></div>
  </div>
- ${(()=>{const u=unreadByTab(),ks=Object.keys(u);return ks.length?`<div class="card ann" style="margin-top:18px"><b>💬 게임2 새 답장 ${ks.reduce((s,k)=>s+u[k],0)}개</b><div>${ks.map(k=>`<button class="btn sm" onclick="go(${jq(k)})">${esc(tabName(k))} ${u[k]}</button>`).join(' ')}</div></div>`:''})()}
+ ${(()=>{const u=unreadByTab(),ks=Object.keys(u);return ks.length?`<div class="card ann" style="margin-top:18px"><b>💬 새 답장 ${ks.reduce((s,k)=>s+u[k],0)}개</b><div>${ks.map(k=>`<button class="btn sm" onclick="go(${jq(k)})">${esc(tabName(k))} ${u[k]}</button>`).join(' ')}</div></div>`:''})()}
  <div class="grid g2" style="margin-top:18px"><div class="card now"><h3>🔥 내가 지금 하는 일</h3><ul>${D.now.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>
  <div class=card><h3>🕒 최근 기록</h3>${recent.length?recent.map(a=>`<div class=act><span class=when>${when(a.timestamp)}</span><span>${actText(a)}</span></div>`).join(''):'<p class=dim>아직 남긴 게 없어. 그림 좋아/별로부터 눌러볼래?</p>'}</div></div>
  ${ui.length?`<div class=sec><h3>🎨 새로 뽑은 그림</h3><span class=dim>바로 여기서 눌러도 돼</span><button class="btn sm" style="margin-left:auto" onclick="go('gallery')">전체 보기 →</button></div><div class=newimgs>${ui.slice(0,8).map(i=>imgCard(i)).join('')}</div>`:''}`}
@@ -169,6 +183,22 @@ function actText(a){const lab=id=>{const i=D.images.find(x=>x.id==id);return i?i
  if(a.kind=='upload')return `📎 <b>${esc(a.name)}</b> 올림 (${esc(tabName(a.tab))})`;
  if(a.kind=='post')return `💭 ${esc(String(a.comment||a.url).slice(0,60))}`;if(a.kind=='upload_meta')return '✏️ 자료 메모·위치 고침';if(a.kind=='feedback')return `🖍️ 그림 피드백 <b>${esc(a.title||'')}</b>`;if(a.kind=='line')return `📝 대사 <b>${esc(a.scene)} ${(+a.line)+1}번 줄</b> ${a.revised?'수정':'코멘트'}`;if(a.kind=='comment')return `💬 ${esc(String(a.comment).slice(0,60))}`;return esc(a.kind)}
 const tabName=k=>(TABS.find(t=>t[0]==k)||[k,k])[1];
+// ---- 정한 것 (10-25 총괄): data.json decisions = decisions.json 장부. spec_gap = 검사기(spec_check) 결과, unanswered = 답장 없는 사용자 입력 수
+const DSTC={'게임에 들어감':'g','진행':'p','일부 들어감':'p','아직 안 들어감':'w','확인 필요':'w','다시 묻는 중':'w','문서만':'','바뀜':'r'};
+let DCF='';
+function homeDecLine(){const d=D.decisions||[],g=D.spec_gap||{},u=D.unanswered||{};if(!d.length&&g.count==null)return '';
+ const notIn=d.filter(x=>x.status!='게임에 들어감'&&x.status!='바뀜'&&x.status!='문서만').length;
+ return `<div class="card ann" style="cursor:pointer" onclick="go('decided')"><b>📌 정한 것 ${d.length}개</b><div>${g.count!=null?`검사기로 보면 <b>정했는데 게임에 없는 것 ${g.count}개</b> <span class=small>(${esc(g.run_at||'')})</span> · `:''}장부에서 아직 게임에 안 들어간 결정 ${notIn}개${u.count?` · <span class=small>봇이 대시보드에 답장 안 단 네 말 ${u.count}개(최근 ${u.recent_count||0})</span>`:''}</div><button class="btn sm">정한 것 보기 →</button></div>`}
+function vDecided(){const all=(D.decisions||[]).slice().sort((a,b)=>String(b.at)<String(a.at)?-1:1),areas=[...new Set(all.map(x=>x.area).filter(Boolean))],g=D.spec_gap||{};
+ const list=all.filter(x=>!DCF||x.area==DCF||x.status==DCF),cnt={};for(const x of all)cnt[x.status]=(cnt[x.status]||0)+1;
+ const chip=(v,l,on)=>`<button class="btn sm opt${on?' on':''}" onclick="DCF=${jq(v)};render()">${esc(l)}</button>`;
+ const card=x=>`<div class=card style="margin:10px 0"><div class=row style="gap:8px;flex-wrap:wrap"><b style="font-size:19px">${esc(x.title)}</b>${x.area?`<span class=tag>${esc(x.area)}</span>`:''}<span class="tag ${DSTC[x.status]||''}">${esc(x.status||'')}</span><span class=small style="margin-left:auto">${esc(String(x.at||'').replace('T',' ').slice(5,16))}</span></div>
+  ${x.detail?`<div style="margin-top:6px;white-space:pre-wrap">${esc(x.detail)}</div>`:''}<div class=small style="margin-top:6px">어디서 정함: ${esc(x.source||'-')} · 맡은 쪽: ${esc(x.owner||'-')}${x.ledger?` · 장부 ${esc(x.ledger)}`:''}</div>${x.note?`<div class=small style="margin-top:4px;color:var(--warm2)">메모: ${esc(x.note)}</div>`:''}</div>`;
+ return `<h2>정한 것</h2><p class=lead>네가 채팅·대시보드·봇 대화 어디서 정했든 여기 한 줄로 모아. 총괄이 적고, 게임에 들어갔는지도 같이 표시해.</p>
+ ${g.count!=null?`<div class="card ann"><b>🔎 검사기</b><div>정했는데 게임에 없는 것 <b>${g.count}개</b> ${Object.entries(g.by_kind||{}).filter(([k,v])=>v).map(([k,v])=>`<span class=tag>${esc(k)} ${v}</span>`).join(' ')} <span class=small>${esc(g.run_at||'')}</span></div></div>`:''}
+ <div class=row style="margin:8px 0;flex-wrap:wrap"><span class=small>상태</span>${chip('','전체',!DCF)}${Object.keys(cnt).map(k=>chip(k,k+' '+cnt[k],DCF==k)).join('')}</div>
+ <div class=row style="margin-bottom:10px;flex-wrap:wrap"><span class=small>분야</span>${areas.map(a=>chip(a,a,DCF==a)).join('')}</div>
+ ${list.length?list.map(card).join(''):'<p class=dim>아직 적힌 게 없어.</p>'}`}
 // ---- 결정 대기
 function vAsk(){return qList(D.questions.filter(q=>!isStory(q)),'결정 대기','나중에 바꾸기 어려운 것만 물어볼게. 버튼 하나 고르고 보내면 끝.')}
 function vStory(){return qList(D.questions.filter(isStory),'이야기 질문','이야기 초안을 짜다가 네가 정해야 하는 것만 모았어. 보기 하나 고르거나(⭐ 추천이 내 생각) 아래 칸에 직접 적고 보내면 돼. 답은 아직 게임에 안 넣고 초안에만 반영해.')}
@@ -234,7 +264,7 @@ function vProgress(){return `<h2>진행 상황</h2><p class=lead>위가 최신�
  ${v.builds.length?`<div class=small>📦 ${v.builds.map(esc).join(' · ')}</div>`:''}<div>${cbtn('ver:'+v.v,v.v,'progress')}</div></div></div>`).join('')}</div>`}
 // ---- 자료실
 function vFiles(){const all=uploads();const by={};all.forEach(u=>(by[u.tab]=by[u.tab]||[]).push(u));
- return `<h2>자료실</h2><p class=lead>네가 올린 파일 전부. 어느 탭에서 올렸는지별로 모았어. 여기서 올리면 '자료실'로 들어가.</p>${box('files',true)}
+ return `<h2>자료실</h2>${(D.docs||[]).length?`<div class=grp><span class=dot></span><h3>📘 팀 문서</h3><span class=dim>봇들이 정리한 문서야. 눌러서 펼쳐 봐.</span></div>${D.docs.slice().reverse().map(d=>`<details class="card md" style="margin:8px 0"><summary><b>${esc(d.title)}</b> <span class=small>${esc(d.updated||'')}</span></summary>${md(d.md)}</details>`).join('')}`:''}<p class=lead>네가 올린 파일 전부. 어느 탭에서 올렸는지별로 모았어. 여기서 올리면 '자료실'로 들어가.</p>${box('files',true)}
  ${Object.keys(by).length?Object.entries(by).map(([t,l])=>`<div class=grp><span class=dot></span><h3>${esc(tabName(t))}</h3><span class=dim>${l.length}개</span></div><div class=ups>${l.slice().reverse().map(upCard).join('')}</div>`).join(''):'<div class="card empty" style="margin-top:20px"><div class=big>📂</div><h3>아직 올린 자료 없음</h3><p class=dim>참고 그림, 영상, PDF 뭐든 끌어다 놓으면 돼.</p></div>'}`}
 function upKind(u){const n=(u.name||'').toLowerCase();if(/\.(png|jpe?g|gif|webp|bmp|svg)$/.test(n))return'img';if(/\.(mp4|webm|mov)$/.test(n))return'vid';if(/\.pdf$/.test(n))return'pdf';return'file'}
 function upCard(u){const k=upKind(u),url=fileUrl(u);const ext=(u.name.split('.').pop()||'파일').toUpperCase();const n=cntAll('up:'+u.id),nu=tabOfT('up:'+u.id)==cur?unreadIn('up:'+u.id):0;
@@ -252,11 +282,11 @@ function vIdea(){const items=[...posts('idea').map(p=>({ts:p.timestamp,t:'post:'
   <div class=ith>${threadHtml(x.t)}</div></div>`}).join(''):'<div class="card empty"><div class=big>💭</div><h3>아직 망상 없음</h3><p class=dim>위에 아무거나 적어서 올려봐.</p></div>'}</div>`}
 // ---- PixelLab
 function vBatch(){return `<h2>PixelLab 계획</h2><p class=lead>한 달 동안 뭘 얼마나 뽑을지 정리한 거야.</p><div class="card md">${md(D.batch_md)}</div>`}
-function md(s){let h='',tb=null,ul=false;const inl=t=>esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/`(.+?)`/g,'<code>$1</code>');
+function md(s){let h='',tb=null,ul=false;const inl=t=>esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/`(.+?)`/g,'<code>$1</code>').replace(/\[([^\]]+)\]\((https?:\/\/[^)\s"]+)\)/g,'<a href="$2" target=_blank rel=noopener>$1</a>');
  const fl=()=>{if(tb){h+='<table>'+tb.map((r,i)=>'<tr>'+r.map(c=>i?`<td>${inl(c)}</td>`:`<th>${inl(c)}</th>`).join('')+'</tr>').join('')+'</table>';tb=null}if(ul){h+='</ul>';ul=false}};
  for(const l of s.split('\n')){if(l.startsWith('|')){if(/^\|[-| :]+\|$/.test(l))continue;if(ul){h+='</ul>';ul=false}(tb=tb||[]).push(l.split('|').slice(1,-1).map(x=>x.trim()));continue}
   if(/^\s*(-|\d+\.) /.test(l)){if(tb)fl();if(!ul){h+='<ul>';ul=true}h+='<li>'+inl(l.replace(/^\s*(-|\d+\.) /,''))+'</li>';continue}fl();
-  if(l.startsWith('## '))h+='<h3>'+inl(l.slice(3))+'</h3>';else if(l.startsWith('# '))h+='<h2>'+inl(l.slice(2))+'</h2>';else if(l.trim())h+='<p>'+inl(l)+'</p>'}fl();return h}
+  if(l.startsWith('### '))h+='<h4>'+inl(l.slice(4))+'</h4>';else if(l.trim().startsWith('> '))h+='<blockquote>'+inl(l.trim().slice(2))+'</blockquote>';else if(l.startsWith('---'))h+='<hr>';else if(l.startsWith('## '))h+='<h3>'+inl(l.slice(3))+'</h3>';else if(l.startsWith('# '))h+='<h2>'+inl(l.slice(2))+'</h2>';else if(l.trim())h+='<p>'+inl(l)+'</p>'}fl();return h}
 // ---- 탭별 자료/코멘트 공간 (올리기 전에 메모·탭·캐릭터를 먼저 정함)
 let STAGE=[],stNote='',stUrl='',stTab=null,stChar='';
 const charOpts=sel=>`<option value="">(캐릭터 연결 안 함)</option>`+D.characters.map(c=>`<option value="${esc(c.name)}"${sel==c.name?' selected':''}>${esc(disp(c.name))}</option>`).join('');
@@ -302,7 +332,7 @@ const seenSet=()=>new Set(JSON.parse(localStorage.getItem('seenReplies')||'[]'))
 function unread(filter){const s=seenSet();let n=0;for(const [t,l] of Object.entries(D.replies||{}))if(!filter||filter(t))for(const r of l)if(!s.has(t+'|'+r.ts))n++;return n}
 function markSeen(filter){const s=seenSet();for(const [t,l] of Object.entries(D.replies||{}))if(!filter||filter(t))for(const r of l)s.add(t+'|'+r.ts);localStorage.setItem('seenReplies',JSON.stringify([...s]))}
 function rootOf(t){const I=ix();let g=0;while(t&&t.startsWith('c:')&&g++<50){const c=I.byId[t.slice(2)];if(!c||c.kind!='comment')return null;t=c.target}return t||null}
-const NOBOX=['files','idea','script','unlock','feedback'];
+const NOBOX=['files','idea','script','unlock','feedback','novel'];
 function tabOfT(t){const r=rootOf(t);if(!r)return null;const k=r.indexOf(':'),p=r.slice(0,k),id=r.slice(k+1);
  if(p=='char')return D.characters.some(c=>c.id==id)?'chars':null;
  if(p=='img')return D.images.some(i=>i.id==id)?'gallery':null;
@@ -311,6 +341,7 @@ function tabOfT(t){const r=rootOf(t);if(!r)return null;const k=r.indexOf(':'),p=
  if(p=='line'){const l=ix().byId[id];return l&&l.kind=='line'?(String(l.scene).startsWith('unlock:')?'unlock':'script'):null}
  if(p=='fb')return ix().byId[id]?'feedback':null;
  if(p=='tab')return TABS.some(t=>t[0]==id)?id:null;
+ if(p=='novel')return 'novel';
  if(p=='ver')return 'progress';return null}
 function unreadByTab(){const s=seenSet(),b={};for(const [t,l] of Object.entries(D.replies||{})){const n=l.filter(r=>!s.has(t+'|'+r.ts)).length;if(!n)continue;const tb=tabOfT(t);if(tb)b[tb]=(b[tb]||0)+n}return b}
 function descOf(t){const out=new Set([t]),st=[t];while(st.length){for(const c of comments(st.pop())){const k='c:'+c.id;if(!out.has(k)){out.add(k);st.push(k)}}}return out}
@@ -374,25 +405,56 @@ async function poll(){try{const r=await fetch('data.json',{cache:'no-cache'});if
  if(ch){D=JSON.parse(tx);lastDT=tx;$('#upd').textContent='내용 업데이트 '+D.updated;const typing=(document.activeElement&&document.activeElement.matches('textarea,input,select'))||[...document.querySelectorAll('#main textarea')].some(t=>t.value.trim())||(cur=='feedback'&&FB.strokes.length>0);if(typing)badges();else if(!drawerTarget)render();else badges()}
  nCheck();setTitle()}catch(e){}}
 // ---- 봇 대화 (구현·그림·이야기·디자인 + 사용자). 봇 글=data.json botchat, 사용자 글=answers kind:'botchat'(question_id=받는 봇, answer=주제, comment=본문)
-const BCROLE={'구현':'구현 · 코딩','그림':'그림 · 아트','잡다한거':'그림 · 아트','이야기':'이야기 · 세계관·대사','디자인':'디자인 · 규칙·수치','사용자':'사용자'},BCCOL={'구현':'#2ec4b6','그림':'#ffb27a','잡다한거':'#ffb27a','이야기':'#b48cff','디자인':'#7ad1ff','사용자':'#ffcc4d'};
+const BCROLE={'구현':'구현 · 코딩','그림':'그림 · 아트','잡다한거':'그림 · 아트','이야기':'이야기 · 세계관·대사','디자인':'디자인 · 규칙·수치','총괄':'총괄 · 조율·진행','사용자':'사용자'},BCCOL={'구현':'#2ec4b6','그림':'#ffb27a','잡다한거':'#ffb27a','이야기':'#b48cff','디자인':'#7ad1ff','총괄':'#ff6b9a','사용자':'#ffcc4d'};
 let BCF='',BCW='';
-function bcAll(){const b=(D.botchat||[]).map(m=>Object.assign({},m)),u=A.filter(a=>a.kind=='botchat').map(a=>({id:a.id,ts:a.timestamp,from:'사용자',to:a.question_id||'',topic:a.answer||'',text:a.comment||''}));return [...b,...u].sort((x,y)=>String(x.ts)<String(y.ts)?-1:1)}
+function bcAll(){const b=(D.botchat||[]).map(m=>Object.assign({},m)),u=A.filter(a=>a.kind=='botchat').map(a=>({id:a.id||('ubc_'+String(a.timestamp||'').replace(/\D/g,'').slice(0,14)),ts:a.timestamp,from:'사용자',to:a.question_id||'',topic:a.answer||'',text:a.comment||''}));return [...b,...u].sort((x,y)=>String(x.ts)<String(y.ts)?-1:1)}
 function kst(ts){const d=new Date(ts);if(isNaN(d))return esc(ts);return d.toLocaleString('ko-KR',{timeZone:'Asia/Seoul',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit',hour12:false})+' (한국)'}
 function vBotchat(){const all=bcAll(),topics=[...new Set(all.map(m=>m.topic).filter(Boolean))];
  const list=all.filter(m=>(!BCF||m.topic==BCF)&&(!BCW||m.from==BCW||m.to==BCW));
  const chip=(v,l,on,fn)=>`<button class="btn sm opt${on?' on':''}" onclick="${fn}=${jq(v)};render()">${esc(l)}</button>`;
  const msg=m=>{const c=BCCOL[m.from]||'#8ea6b6',me=m.from=='사용자';return `<div class=card style="border-left:6px solid ${c};margin:10px 0;${me?'margin-left:60px;background:#1d2a20':'margin-right:60px'}">
   <div class=row style="gap:8px"><b style="color:${c};font-size:18px">${esc(m.from)}</b><span class=role>${esc(BCROLE[m.from]||'')}</span>${m.to?`<span class=small>→ ${esc(m.to)}</span>`:''}${m.topic?`<span class=tag>${esc(m.topic)}</span>`:''}<span class=small style="margin-left:auto">${kst(m.ts)}</span></div>
-  <div style="white-space:pre-wrap;margin-top:6px">${esc(m.text)}</div>${(m.refs&&m.refs.length)?`<div class=small style="margin-top:6px">참고: ${m.refs.map(esc).join(', ')}</div>`:''}</div>`};
- return `<h2>봇 대화</h2><p class=lead>구현(코딩·게임 적용·테스트), 그림(아트), 이야기(세계관·대사·캐릭터), 디자인(게임 규칙·수치·밸런스)이 대시보드를 근거로 서로 묻고 피드백하는 곳이야. 너도 아래에서 글 남길 수 있어.</p>
+  ${m.reply?`<div class=small style="margin-top:4px">↪ ${esc((()=>{const p=all.find(x=>x.id==m.reply);return p?p.from+': '+String(p.text).slice(0,50):m.reply})())}</div>`:''}<div style="white-space:pre-wrap;margin-top:6px">${esc(m.text)}</div>${(m.refs&&m.refs.length)?`<div class=small style="margin-top:6px">참고: ${m.refs.map(esc).join(', ')}</div>`:''}</div>`};
+ return `<h2>봇 대화</h2><p class=lead>총괄(조율·진행), 구현(코딩·게임 적용·테스트), 그림(아트), 이야기(세계관·대사·캐릭터), 디자인(게임 규칙·수치·밸런스)이 대시보드를 근거로 서로 묻고 피드백하는 곳이야. 너도 아래에서 글 남길 수 있어.</p>
  <div class=row style="margin-bottom:6px"><span class=small>주제</span>${chip('','전체',!BCF,'BCF')}${topics.map(t=>chip(t,t,BCF==t,'BCF')).join('')}</div>
- <div class=row style="margin-bottom:10px"><span class=small>누구</span>${chip('','전체',!BCW,'BCW')}${['구현','그림','이야기','디자인','사용자'].map(t=>chip(t,BCROLE[t],BCW==t,'BCW')).join('')}</div>
+ <div class=row style="margin-bottom:10px"><span class=small>누구</span>${chip('','전체',!BCW,'BCW')}${['총괄','구현','그림','이야기','디자인','사용자'].map(t=>chip(t,BCROLE[t],BCW==t,'BCW')).join('')}</div>
  ${list.length?list.map(msg).join(''):'<p class=dim>아직 글이 없어.</p>'}
- <div class=box><h3>글 남기기</h3><div class=row style="margin-bottom:8px"><span class=small>받는 쪽</span><select id=bcTo style="font:inherit;padding:8px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line)"><option value="모두">모두</option><option value="구현">구현 · 코딩</option><option value="그림">그림 · 아트</option><option value="이야기">이야기 · 세계관·대사</option><option value="디자인">디자인 · 규칙·수치</option></select>
+ <div class=box><h3>글 남기기</h3><div class=row style="margin-bottom:8px"><span class=small>받는 쪽</span><select id=bcTo style="font:inherit;padding:8px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line)"><option value="모두">모두</option><option value="총괄">총괄 · 조율·진행</option><option value="구현">구현 · 코딩</option><option value="그림">그림 · 아트</option><option value="이야기">이야기 · 세계관·대사</option><option value="디자인">디자인 · 규칙·수치</option></select>
  <span class=small>주제</span><select id=bcTp style="font:inherit;padding:8px;border-radius:9px;background:#060d15;color:var(--tx);border:1.5px solid var(--line)"><option>게임</option><option>그림</option><option>이야기</option><option>기타</option></select></div>
  <textarea id=bcTx rows=3 placeholder="봇들한테 할 말"></textarea><div class=row style="margin-top:8px"><button class="btn pri" onclick="bcSend()">보내기</button><span class=small>봇들은 5분마다 확인해.</span></div></div>`}
 async function bcSend(){const t=$('#bcTx'),tx=t.value.trim();if(!tx){toast('내용을 적어 줘');return}
  try{await post('/answer',{kind:'botchat',question_id:$('#bcTo').value,answer:$('#bcTp').value,comment:tx});t.value='';toast('보냈어 ✓');render()}catch(e){toast('못 보냈어: '+e.message)}}
+// ---- 웹소설 (이야기 봇 원고 → data.json webnovel). 읽은 화·글자 크기·마지막 화는 이 브라우저에만 저장
+let NV=+(localStorage.getItem('novelEp')||0);
+const nvRead=()=>new Set(JSON.parse(localStorage.getItem('novelRead')||'[]'));
+const nvFs=()=>Math.min(26,Math.max(15,+(localStorage.getItem('novelFs')||19)));
+function nvGo(n){NV=+n||0;localStorage.setItem('novelEp',NV);if(NV){const r=nvRead();r.add(NV);localStorage.setItem('novelRead',JSON.stringify([...r]));localStorage.setItem('novelLast',NV)}render();window.scrollTo(0,0)}
+function nvFont(d){localStorage.setItem('novelFs',nvFs()+d);render()}
+function nvBody(s){let h='',q=[];const inl=t=>esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');const fq=()=>{if(q.length){h+='<blockquote>'+q.map(inl).join('<br>')+'</blockquote>';q=[]}};
+ for(const raw of String(s||'').split('\n')){const l=raw.trim();if(l.startsWith('>')){q.push(l.replace(/^>\s?/,''));continue}fq();if(!l)continue;
+  if(/^(-{3,}|\*{3,})$/.test(l))h+='<div class=sep>◆ ◆ ◆</div>';else if(l.startsWith('〔'))h+='<div class=sys>'+inl(l)+'</div>';else if(/^#+\s/.test(l))h+='<h3>'+inl(l.replace(/^#+\s/,''))+'</h3>';else h+='<p>'+inl(l)+'</p>'}fq();return h}
+const nvBadge=e=>e.draft?`<span class=nvd title="아직 안 정한 갈림길을 추천안으로 쓴 화 (${esc(e.draft)})">가안</span>`:'';
+function vNovel(){const W=D.webnovel||{},E=W.episodes||[];if(!E.length)return '<h2>웹소설</h2><p class=lead>아직 원고가 없어.</p>';
+ const hh=document.querySelector('header');if(hh)document.documentElement.style.setProperty('--hdrh',hh.offsetHeight+'px');
+ const wq=D.questions.filter(q=>q.id.startsWith('story1025_wn_')),wqOpen=wq.filter(q=>!qAns(q.id)).length;
+ const e=E.find(x=>x.n==NV);
+ if(!e){const r=nvRead(),last=+(localStorage.getItem('novelLast')||0),nxt=last?(E.find(x=>x.n>last)||E.find(x=>x.n==last)):E[0];
+  const parts=(W.parts&&W.parts.length?W.parts:[{name:'',sub:'',a:1,b:9999}]);
+  return `<div class=nvwrap><h2>📖 ${esc(W.title||'웹소설')}</h2><p class=lead>이야기봇이 쓴 웹소설 <b>확정본</b>이야(10-25 02:51, 질문 11개 네 답 다 반영). 화를 누르면 읽을 수 있어. 고치고 싶은 데 있으면 몇 화인지 적어서 코멘트 남겨줘.</p>
+  <div class=row style="margin-bottom:18px"><button class="btn pri" onclick="nvGo(${nxt?nxt.n:1})">${last?`▶ 이어 읽기 · ${nxt.n}화`:'▶ 1화부터 읽기'}</button>${wq.length?`<button class="btn" onclick="go('story')">❓ 웹소설 갈림 질문 ${wqOpen?`<b style="color:var(--warm)">${wqOpen}개 남음</b>`:'다 골랐어 ✓'}</button>`:''}<span class=small>총 ${E.length}화 · 원고 ${esc(W.updated||'')} · 읽음 ${E.filter(x=>r.has(x.n)).length}/${E.length}</span></div>
+  ${parts.map(p=>{const L=E.filter(x=>x.n>=p.a&&x.n<=p.b);if(!L.length)return '';return `<div class="card nvtoc" style="margin-bottom:16px">${p.name?`<h3>${esc(p.name)}</h3>${p.sub?`<p class=small style="margin:-4px 0 8px">${esc(p.sub)} · ${p.a}~${p.b}화</p>`:''}`:''}
+   ${L.map(x=>`<div class="ep${r.has(x.n)?' rd':''}" onclick="nvGo(${x.n})"><span class=no>${x.n}화</span><div><div class=tt>${esc(x.title)}${nvBadge(x)}</div>${x.line?`<div class=ln>${esc(x.line)}</div>`:''}</div></div>`).join('')}</div>`}).join('')}</div>`}
+ const i=E.indexOf(e),pv=E[i-1],nx=E[i+1];
+ return `<div class=nvwrap style="--nvfs:${nvFs()}px"><div class=nvbar><button class="btn sm" onclick="nvGo(0)">☰ 목차</button>
+  <select onchange="nvGo(this.value)">${E.map(x=>`<option value="${x.n}"${x.n==e.n?' selected':''}>${x.n}화 · ${esc(x.title)}${x.draft?' (가안)':''}</option>`).join('')}</select>
+  <button class="btn sm" onclick="nvFont(-1)" title="글자 작게">가−</button><button class="btn sm" onclick="nvFont(1)" title="글자 크게">가+</button></div>
+  <div class=nvhead><div class=small style="margin-top:14px">${esc(e.part)}</div><h2>제${e.n}화 · ${esc(e.title)}${nvBadge(e)}</h2>
+  ${e.draft?`<div class="card" style="border-color:#ffcc4d66;background:#2a2410;margin:10px 0 6px;padding:12px 16px"><b style="color:var(--pick)">가안</b> · 아직 안 정한 갈림길(${esc(e.draft.replace('가안','').trim())})을 추천안으로 쓴 화야. <a href="#" onclick="go('story');return false">이야기 질문에서 고르기 →</a></div>`:''}</div>
+  <article class=nvtext style="margin-top:18px">${nvBody(e.body)}</article>
+  <div class=nvnav>${pv?`<button class=btn onclick="nvGo(${pv.n})">← ${pv.n}화 · ${esc(pv.title)}</button>`:'<span></span>'}${nx?`<button class="btn pri" onclick="nvGo(${nx.n})">${nx.n}화 · ${esc(nx.title)} →</button>`:`<button class=btn onclick="nvGo(0)">완결 · 목차로</button>`}</div>
+  <div class=row style="justify-content:center;margin-top:14px">${cbtn('novel:'+e.n,'웹소설 '+e.n+'화 · '+e.title,'novel')}<span class=small>이 화 읽고 든 생각 남기면 이야기봇이 봐.</span></div></div>`}
+document.addEventListener('keydown',e=>{if(cur!='novel'||!NV||e.target.matches('textarea,input,select')||e.ctrlKey||e.altKey||e.metaKey)return;const E=(D.webnovel||{}).episodes||[],i=E.findIndex(x=>x.n==NV);
+ if(e.key=='ArrowRight'&&E[i+1])nvGo(E[i+1].n);else if(e.key=='ArrowLeft'&&E[i-1])nvGo(E[i-1].n)});
 // ---- 시작
 
 // ---- 읽기 전용 공유본: 저장·올리기·알림 끄기
